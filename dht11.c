@@ -50,7 +50,7 @@ int check(int *data)
     }
     int checksum = dec[0] + dec[1] + dec[2] + dec[3];
     if(dec[4] == checksum & 0xff) {
-        printf("湿度: %d.%d%%\n温度: %d.%d \n", dec[0], dec[1], dec[2], dec[3]);
+        printf("湿度: %d.%d%% |温度: %d.%d \n", dec[0], dec[1], dec[2], dec[3]);
         write2file(dec);
         return 0;
     }
